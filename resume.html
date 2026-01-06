@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="resume.html">Resume Builder</a>
+  <a href="assistant.html">AI Assistant</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>Create Your Smart Resume</h2>
+
+    <input id="name" placeholder="Full Name">
+    <input id="email" placeholder="Email">
+
+    <select id="template">
+      <option value="modern">Modern Template</option>
+      <option value="classic">Classic Template</option>
+    </select>
+
+    <input id="skill1" placeholder="Skill 1">
+    <input id="skill1lvl" placeholder="Skill 1 Level (0-100)">
+    <input id="skill2" placeholder="Skill 2">
+    <input id="skill2lvl" placeholder="Skill 2 Level (0-100)">
+    <button onclick="suggestSkills()">AI Suggest Skills</button>
+
+
+    <textarea id="experience" placeholder="Experience"></textarea>
+
+    <button onclick="generateResume()">Generate Creative Resume</button>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <h2>Live Preview</h2>
+    <div id="preview"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
